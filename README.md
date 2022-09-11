@@ -30,26 +30,26 @@ B -- redirect --> D(Profile)
 A -- navigate -->E(Hosting Packages)
 E -- navigation --> F(Cart)
 F -- if logged in --> G((Order Package))
-G -- if not in system -->D
+G -- if not already in database -->D
 F -- if logged in ---> P((Clear Cart))
 P --> F
 F -- if no account -->C
 F -- if account --> B
 D -- navigate --> E
 D -- navigate -->H(Edit Profile Settings)
-J --  navigate --> I(Create Ticket)
+J --  navigate --> I((Create Ticket))
 I -- redirect -->D
 D --  navigate --> J(View Open Tickets)
 J -- navigate --> M(Ticket)
-M -- post ---> N(Reply)
-M --> O(Close Ticket)
+M -- post ---> N((Reply))
+M --> O((Close Ticket))
 D --  navigate --> K(View Closed Tickets)
 K -- navigate --> I
 D --  navigate --> L(Current User's Hosting Packages)
 L -- navigate --> E
+O --> M
 
 ```
-PQRST
 ## Contact Me
 If you would like to contact me, you can do so via the following: 
 ***[Email](mailto:webmaster@winterreign.dev) -- [Website](https://winterreign.dev) -- [Twitter](https://camo.githubusercontent.com/2cbca4be42d81c6833fd417d74f5322e80861326d03d52289924138947be7b4e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f547769747465722d2532333144413146322e7376673f6c6f676f3d54776974746572266c6f676f436f6c6f723d7768697465) -- [Showwcase](https://www.showwcase.com/winterreigndev)***
